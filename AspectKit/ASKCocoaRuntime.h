@@ -27,4 +27,6 @@ typedef NS_ENUM(NSInteger, ASKMethod) {
 
 + (BOOL)respondsClass:(nonnull Class)clazz toSelector:(nonnull SEL)selector method:(ASKMethod)method;
 
++ (nonnull NSArray<NSString *> *)propertyNamesWithClass:(nonnull Class)clazz;
+
 @end

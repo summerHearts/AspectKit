@@ -67,4 +67,23 @@
     }
 }
 
++ (NSArray<NSString *> *)propertyNamesWithClass:(Class)clazz
+{
+    unsigned int propertyCount;
+    objc_property_t *properties = class_copyPropertyList(clazz, &propertyCount);
+    NSMutableArray *propertyNames = [@[] mutableCopy];
+    for(NSUInteger i = 0; i < propertyCount; i++) {
+        objc_property_t property = properties[i];
+        const char *propertyCString = property_getName(property);
+        if(propertyCString) {
+            NSString *propertyName = [NSString stringWithCString:propertyCString
+                                                        encoding:NSUTF8StringEncoding];
+            [propertyNames addObject:propertyName];
+        }
+    }
+    free(properties);
+    
+    return propertyNames;
+}
+
 @end
