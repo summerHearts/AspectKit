@@ -32,4 +32,9 @@ class ASKCocoaRuntimeTests: XCTestCase {
             return false
         }.count == 0)
     }
+    
+    func testMetaClassWithClass() {
+        let clazz = NSString.self
+        XCTAssert(ASKCocoaRuntime.metaClassWithClass(clazz) != clazz)
+    }
 }
