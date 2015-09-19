@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+public enum AdvicePosition {
+    case Before
+    case After
+    case Around
+}
+
