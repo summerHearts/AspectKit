@@ -14,6 +14,8 @@
 		FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
 		FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
 		FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */; settings = {ASSET_TAGS = (); }; };
+		FA03126A1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
+		FA03126B1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKCocoaRuntime.h; sourceTree = "<group>"; };
 		FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKCocoaRuntime.m; sourceTree = "<group>"; };
 		FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASKCocoaRuntimeTests.swift; sourceTree = "<group>"; };
+		FA0312691BAD418300101C42 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				FA03124C1BAD3EE900101C42 /* Info.plist */,
 				FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */,
 				FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */,
+				FA0312691BAD418300101C42 /* Advice.swift */,
 			);
 			path = AspectKit;
 			sourceTree = "<group>";
@@ -208,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
+				FA03126A1BAD418300101C42 /* Advice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +223,7 @@
 				FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
 				FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */,
 				FA0312571BAD3EE900101C42 /* AspectKitTests.swift in Sources */,
+				FA03126B1BAD418300101C42 /* Advice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +404,7 @@
 				FA03125D1BAD3EE900101C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA03125E1BAD3EE900101C42 /* Build configuration list for PBXNativeTarget "AspectKitTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +413,7 @@
 				FA0312601BAD3EE900101C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
