@@ -12,7 +12,7 @@ import XCTest
 class ASKCocoaRuntimeTests: XCTestCase {
     
     func testClassFromString() {
-        XCTAssert(ASKCocoaRuntime.classFromString("NSObject") == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.classFromString("NSObject")! == NSObject.self)
     }
     
     func testStringFromClass() {
@@ -33,15 +33,26 @@ class ASKCocoaRuntimeTests: XCTestCase {
         }.count == 0)
     }
     
+    func testSuperClassWithClass() {
+        let stringClazz: AnyClass = NSString.self
+        let stringSuperClazz: AnyClass = ASKCocoaRuntime.superClassWithClass(stringClazz)!
+        XCTAssertFalse(stringClazz == stringSuperClazz)
+        XCTAssert(ASKCocoaRuntime.stringFromClass(stringSuperClazz) == "NSObject")
+        let objectSuperClazz: AnyClass? = ASKCocoaRuntime.superClassWithClass(NSObject.self)
+        XCTAssert(objectSuperClazz == nil)
+    }
+    
     func testMetaClassWithClass() {
-        let clazz = NSString.self
-        XCTAssert(ASKCocoaRuntime.metaClassWithClass(clazz) != clazz)
+        let clazz: AnyClass = NSString.self
+        let metaClazz: AnyClass = ASKCocoaRuntime.metaClassWithClass(clazz)
+        print("meta class is \(ASKCocoaRuntime.stringFromClass(metaClazz))")
+        XCTAssertFalse(clazz == metaClazz)
     }
     
     func testRespondsClassToSelector() {
         XCTAssert(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "characterAtIndex:", method: .Instance))
-        XCTAssert(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "availableStringEncodings", method: .Class))
         XCTAssertFalse(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "characterAtIndex:", method: .Class))
+        XCTAssert(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "availableStringEncodings", method: .Class))
         XCTAssertFalse(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "availableStringEncodings", method: .Instance))
     }
 }
