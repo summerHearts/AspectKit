@@ -37,4 +37,11 @@ class ASKCocoaRuntimeTests: XCTestCase {
         let clazz = NSString.self
         XCTAssert(ASKCocoaRuntime.metaClassWithClass(clazz) != clazz)
     }
+    
+    func testRespondsClassToSelector() {
+        XCTAssert(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "characterAtIndex:", method: .Instance))
+        XCTAssert(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "availableStringEncodings", method: .Class))
+        XCTAssertFalse(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "characterAtIndex:", method: .Class))
+        XCTAssertFalse(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "availableStringEncodings", method: .Instance))
+    }
 }
