@@ -16,6 +16,7 @@
 		FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */; settings = {ASSET_TAGS = (); }; };
 		FA03126A1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
 		FA03126B1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E851BB1263400E33392 /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKCocoaRuntime.m; sourceTree = "<group>"; };
 		FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASKCocoaRuntimeTests.swift; sourceTree = "<group>"; };
 		FA0312691BAD418300101C42 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		FA7D3E851BB1263400E33392 /* JoinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */,
 				FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */,
 				FA0312691BAD418300101C42 /* Advice.swift */,
+				FA7D3E851BB1263400E33392 /* JoinPoint.swift */,
 			);
 			path = AspectKit;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */,
 				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
 				FA03126A1BAD418300101C42 /* Advice.swift in Sources */,
 			);
