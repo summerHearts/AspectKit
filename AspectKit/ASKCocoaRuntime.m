@@ -8,7 +8,8 @@
 
 #import "ASKCocoaRuntime.h"
 
-#import <objc/objc-runtime.h>
+#import <objc/message.h>
+#import <objc/runtime.h>
 
 @implementation ASKCocoaRuntime
 
