@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum AdvicePosition {
+public enum AdviceType {
     case Before
     case After
     case Around
