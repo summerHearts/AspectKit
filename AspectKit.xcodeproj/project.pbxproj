@@ -17,6 +17,7 @@
 		FA03126A1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
 		FA03126B1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E851BB1263400E33392 /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E881BB1276800E33392 /* PointCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E871BB1276800E33392 /* PointCut.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASKCocoaRuntimeTests.swift; sourceTree = "<group>"; };
 		FA0312691BAD418300101C42 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		FA7D3E851BB1263400E33392 /* JoinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPoint.swift; sourceTree = "<group>"; };
+		FA7D3E871BB1276800E33392 /* PointCut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */,
 				FA0312691BAD418300101C42 /* Advice.swift */,
 				FA7D3E851BB1263400E33392 /* JoinPoint.swift */,
+				FA7D3E871BB1276800E33392 /* PointCut.swift */,
 			);
 			path = AspectKit;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */,
 				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
 				FA03126A1BAD418300101C42 /* Advice.swift in Sources */,
+				FA7D3E881BB1276800E33392 /* PointCut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
