@@ -10,22 +10,29 @@ import Foundation
 
 public struct Aspect {
     
-    public static func weaver(advice advice: Advice, pointcut: Pointcut) {
+    public static func register(advice advice: Advice, pointcut: Pointcut) {
+        
+    }
+    
+    public static func weaver() {
         
     }
 }
 
-public func before(pointcut: Pointcut, priorityOrdered: Int = 100, action: AdviceAction) {
+public func before(pointcut pointcut: Pointcut, priorityOrdered: Int = 100, action: AdviceAction) {
     let advice = Advice(type: .Before, priorityOrdered: priorityOrdered, action: action)
-    Aspect.weaver(advice: advice, pointcut: pointcut)
+    Aspect.register(advice: advice, pointcut: pointcut)
+    Aspect.weaver()
 }
 
-public func after(pointcut: Pointcut, priorityOrdered: Int = 100, action: AdviceAction) {
+public func after(pointcut pointcut: Pointcut, priorityOrdered: Int = 100, action: AdviceAction) {
     let advice = Advice(type: .After, priorityOrdered: priorityOrdered, action: action)
-    Aspect.weaver(advice: advice, pointcut: pointcut)
+    Aspect.register(advice: advice, pointcut: pointcut)
+    Aspect.weaver()
 }
 
-public func around(pointcut: Pointcut, priorityOrdered: Int = 100, action: AdviceAction) {
+public func around(pointcut pointcut: Pointcut, priorityOrdered: Int = 100, action: AdviceAction) {
     let advice = Advice(type: .Around, priorityOrdered: priorityOrdered, action: action)
-    Aspect.weaver(advice: advice, pointcut: pointcut)
+    Aspect.register(advice: advice, pointcut: pointcut)
+    Aspect.weaver()
 }
