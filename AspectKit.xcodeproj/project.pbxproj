@@ -18,6 +18,8 @@
 		FA03126B1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E851BB1263400E33392 /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7D3E881BB1276800E33392 /* PointCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E871BB1276800E33392 /* PointCut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8A1BB2551200E33392 /* CocoaPointCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8B1BB2551200E33392 /* CocoaPointCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 		FA0312691BAD418300101C42 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		FA7D3E851BB1263400E33392 /* JoinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPoint.swift; sourceTree = "<group>"; };
 		FA7D3E871BB1276800E33392 /* PointCut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCut.swift; sourceTree = "<group>"; };
+		FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPointCut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 				FA0312691BAD418300101C42 /* Advice.swift */,
 				FA7D3E851BB1263400E33392 /* JoinPoint.swift */,
 				FA7D3E871BB1276800E33392 /* PointCut.swift */,
+				FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */,
 			);
 			path = AspectKit;
 			sourceTree = "<group>";
@@ -218,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */,
+				FA7D3E8A1BB2551200E33392 /* CocoaPointCut.swift in Sources */,
 				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
 				FA03126A1BAD418300101C42 /* Advice.swift in Sources */,
 				FA7D3E881BB1276800E33392 /* PointCut.swift in Sources */,
@@ -229,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
+				FA7D3E8B1BB2551200E33392 /* CocoaPointCut.swift in Sources */,
 				FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */,
 				FA0312571BAD3EE900101C42 /* AspectKitTests.swift in Sources */,
 				FA03126B1BAD418300101C42 /* Advice.swift in Sources */,
@@ -339,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hiromi Motodera (7Z8T8DD7U8)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -357,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hiromi Motodera (7Z8T8DD7U8)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
