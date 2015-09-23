@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Pointcut {
+public class Pointcut {
     
 }

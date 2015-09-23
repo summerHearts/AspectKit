@@ -14,7 +14,7 @@ public enum AdviceType {
     case Around
 }
 
-typealias AdviceAction = (JoinPoint -> Void)
+public typealias AdviceAction = (JoinPoint -> Void)
 
 public class Advice {
     

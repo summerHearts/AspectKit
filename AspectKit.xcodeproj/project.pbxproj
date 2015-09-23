@@ -18,8 +18,9 @@
 		FA03126B1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E851BB1263400E33392 /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7D3E881BB1276800E33392 /* Pointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E871BB1276800E33392 /* Pointcut.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7D3E8A1BB2551200E33392 /* CocoaPointCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7D3E8B1BB2551200E33392 /* CocoaPointCut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E8C1BB2851400E33392 /* Aspect.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,8 @@
 		FA0312691BAD418300101C42 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
 		FA7D3E851BB1263400E33392 /* JoinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPoint.swift; sourceTree = "<group>"; };
 		FA7D3E871BB1276800E33392 /* Pointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointcut.swift; sourceTree = "<group>"; };
-		FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPointCut.swift; sourceTree = "<group>"; };
+		FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPointcut.swift; sourceTree = "<group>"; };
+		FA7D3E8C1BB2851400E33392 /* Aspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aspect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 				FA0312691BAD418300101C42 /* Advice.swift */,
 				FA7D3E851BB1263400E33392 /* JoinPoint.swift */,
 				FA7D3E871BB1276800E33392 /* Pointcut.swift */,
-				FA7D3E891BB2551200E33392 /* CocoaPointCut.swift */,
+				FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */,
+				FA7D3E8C1BB2851400E33392 /* Aspect.swift */,
 			);
 			path = AspectKit;
 			sourceTree = "<group>";
@@ -222,8 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */,
-				FA7D3E8A1BB2551200E33392 /* CocoaPointCut.swift in Sources */,
+				FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
 				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
+				FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */,
 				FA03126A1BAD418300101C42 /* Advice.swift in Sources */,
 				FA7D3E881BB1276800E33392 /* Pointcut.swift in Sources */,
 			);
@@ -234,7 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
-				FA7D3E8B1BB2551200E33392 /* CocoaPointCut.swift in Sources */,
+				FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
 				FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */,
 				FA0312571BAD3EE900101C42 /* AspectKitTests.swift in Sources */,
 				FA03126B1BAD418300101C42 /* Advice.swift in Sources */,
