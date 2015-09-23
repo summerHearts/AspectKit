@@ -14,6 +14,13 @@
 		FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
 		FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
 		FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */; settings = {ASSET_TAGS = (); }; };
+		FA03126A1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
+		FA03126B1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E851BB1263400E33392 /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E881BB1276800E33392 /* Pointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E871BB1276800E33392 /* Pointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E8C1BB2851400E33392 /* Aspect.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,11 @@
 		FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKCocoaRuntime.h; sourceTree = "<group>"; };
 		FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKCocoaRuntime.m; sourceTree = "<group>"; };
 		FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASKCocoaRuntimeTests.swift; sourceTree = "<group>"; };
+		FA0312691BAD418300101C42 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		FA7D3E851BB1263400E33392 /* JoinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPoint.swift; sourceTree = "<group>"; };
+		FA7D3E871BB1276800E33392 /* Pointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointcut.swift; sourceTree = "<group>"; };
+		FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPointcut.swift; sourceTree = "<group>"; };
+		FA7D3E8C1BB2851400E33392 /* Aspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aspect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,11 @@
 				FA03124C1BAD3EE900101C42 /* Info.plist */,
 				FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */,
 				FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */,
+				FA0312691BAD418300101C42 /* Advice.swift */,
+				FA7D3E851BB1263400E33392 /* JoinPoint.swift */,
+				FA7D3E871BB1276800E33392 /* Pointcut.swift */,
+				FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */,
+				FA7D3E8C1BB2851400E33392 /* Aspect.swift */,
 			);
 			path = AspectKit;
 			sourceTree = "<group>";
@@ -207,7 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */,
+				FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
 				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
+				FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */,
+				FA03126A1BAD418300101C42 /* Advice.swift in Sources */,
+				FA7D3E881BB1276800E33392 /* Pointcut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +238,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
+				FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
 				FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */,
 				FA0312571BAD3EE900101C42 /* AspectKitTests.swift in Sources */,
+				FA03126B1BAD418300101C42 /* Advice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hiromi Motodera (7Z8T8DD7U8)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -343,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hiromi Motodera (7Z8T8DD7U8)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -398,6 +424,7 @@
 				FA03125D1BAD3EE900101C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA03125E1BAD3EE900101C42 /* Build configuration list for PBXNativeTarget "AspectKitTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +433,7 @@
 				FA0312601BAD3EE900101C42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
