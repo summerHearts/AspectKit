@@ -43,10 +43,10 @@ class ASKCocoaRuntimeTests: XCTestCase {
     }
     
     func testMetaClassWithClass() {
-        let clazz: AnyClass = NSString.self
+        let clazz: AnyClass = NSObject.self
         let metaClazz: AnyClass = ASKCocoaRuntime.metaClassWithClass(clazz)
-        print("meta class is \(ASKCocoaRuntime.stringFromClass(metaClazz))")
         XCTAssertFalse(clazz == metaClazz)
+        XCTAssert(ASKCocoaRuntime.stringFromClass(clazz) == ASKCocoaRuntime.stringFromClass(metaClazz))
     }
     
     func testRespondsClassToSelector() {
@@ -54,5 +54,49 @@ class ASKCocoaRuntimeTests: XCTestCase {
         XCTAssertFalse(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "characterAtIndex:", method: .Class))
         XCTAssert(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "availableStringEncodings", method: .Class))
         XCTAssertFalse(ASKCocoaRuntime.respondsClass(NSString.self, toSelector: "availableStringEncodings", method: .Instance))
+    }
+    
+    func testPropertyNamesWithClass() {
+        
+    }
+    
+    func testSelectorWithSelector() {
+        
+    }
+    
+    func testSelectorIsEqualToSelector() {
+        
+    }
+    
+    func testObjcTypeEncodingWithClass() {
+        
+    }
+    
+    func testRootResponseClassWithClass() {
+        
+    }
+    
+    func testMethodSignatureWithClass() {
+        
+    }
+    
+    func testOverwriteForClass() {
+        
+    }
+    
+    func testOverwriteMessageForwardForClass() {
+        
+    }
+    
+    func testCopyMethodForClass() {
+        
+    }
+    
+    func testExchangeImplementationsForClass() {
+        
+    }
+    
+    func testAddMethodForClass() {
+        
     }
 }
