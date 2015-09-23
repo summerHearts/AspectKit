@@ -57,46 +57,46 @@ class ASKCocoaRuntimeTests: XCTestCase {
     }
     
     func testPropertyNamesWithClass() {
-        
+        XCTFail()
     }
     
     func testSelectorWithSelector() {
-        
+        XCTFail()
     }
     
     func testSelectorIsEqualToSelector() {
-        
+        XCTFail()
     }
     
     func testObjcTypeEncodingWithClass() {
-        
+        XCTFail()
     }
     
     func testRootResponseClassWithClass() {
-        
+        XCTFail()
     }
     
     func testMethodSignatureWithClass() {
-        
+        XCTFail()
     }
     
     func testOverwriteForClass() {
-        
+        XCTFail()
     }
     
     func testOverwriteMessageForwardForClass() {
-        
+        XCTFail()
     }
     
     func testCopyMethodForClass() {
-        
+        XCTFail()
     }
     
     func testExchangeImplementationsForClass() {
-        
+        XCTFail()
     }
     
     func testAddMethodForClass() {
-        
+        XCTFail()
     }
 }
