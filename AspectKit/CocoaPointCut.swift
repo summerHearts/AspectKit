@@ -1,5 +1,5 @@
 //
-//  CocoaPointCut.swift
+//  CocoaPointcut.swift
 //  AspectKit
 //
 //  Created by Hiromi Motodera on 9/23/15.
