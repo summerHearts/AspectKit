@@ -21,6 +21,9 @@
 		FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
 		FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E8C1BB2851400E33392 /* Aspect.swift */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E901BB2A9D800E33392 /* ASKCocoaInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7D3E8E1BB2A9D800E33392 /* ASKCocoaInvocation.h */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E911BB2A9D800E33392 /* ASKCocoaInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E8F1BB2A9D800E33392 /* ASKCocoaInvocation.m */; settings = {ASSET_TAGS = (); }; };
+		FA7D3E921BB2A9D800E33392 /* ASKCocoaInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E8F1BB2A9D800E33392 /* ASKCocoaInvocation.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,8 @@
 		FA7D3E871BB1276800E33392 /* Pointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointcut.swift; sourceTree = "<group>"; };
 		FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPointcut.swift; sourceTree = "<group>"; };
 		FA7D3E8C1BB2851400E33392 /* Aspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aspect.swift; sourceTree = "<group>"; };
+		FA7D3E8E1BB2A9D800E33392 /* ASKCocoaInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKCocoaInvocation.h; sourceTree = "<group>"; };
+		FA7D3E8F1BB2A9D800E33392 /* ASKCocoaInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKCocoaInvocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,8 @@
 				FA03124C1BAD3EE900101C42 /* Info.plist */,
 				FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */,
 				FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */,
+				FA7D3E8E1BB2A9D800E33392 /* ASKCocoaInvocation.h */,
+				FA7D3E8F1BB2A9D800E33392 /* ASKCocoaInvocation.m */,
 				FA0312691BAD418300101C42 /* Advice.swift */,
 				FA7D3E851BB1263400E33392 /* JoinPoint.swift */,
 				FA7D3E871BB1276800E33392 /* Pointcut.swift */,
@@ -122,6 +129,7 @@
 			files = (
 				FA03124B1BAD3EE900101C42 /* AspectKit.h in Headers */,
 				FA0312631BAD3EFF00101C42 /* ASKCocoaRuntime.h in Headers */,
+				FA7D3E901BB2A9D800E33392 /* ASKCocoaInvocation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7D3E861BB1263400E33392 /* JoinPoint.swift in Sources */,
+				FA7D3E911BB2A9D800E33392 /* ASKCocoaInvocation.m in Sources */,
 				FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
 				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
 				FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */,
@@ -240,6 +249,7 @@
 				FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
 				FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
 				FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */,
+				FA7D3E921BB2A9D800E33392 /* ASKCocoaInvocation.m in Sources */,
 				FA0312571BAD3EE900101C42 /* AspectKitTests.swift in Sources */,
 				FA03126B1BAD418300101C42 /* Advice.swift in Sources */,
 			);
