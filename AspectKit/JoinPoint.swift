@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+public class JoinPoint {
+    
+    var argments: [AnyObject] = []
+    
+    init() {
+        
+    }
+}

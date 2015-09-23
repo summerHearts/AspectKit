@@ -14,3 +14,19 @@ public enum AdviceType {
     case Around
 }
 
+typealias AdviceAction = (JoinPoint -> Void)
+
+public class Advice {
+    
+    var priorityOrdered: Int
+    
+    var type: AdviceType
+    
+    var action: AdviceAction
+    
+    init(type: AdviceType, priorityOrdered: Int = 100, action: AdviceAction) {
+        self.priorityOrdered = priorityOrdered
+        self.type = type
+        self.action = action
+    }
+}
