@@ -1,6 +1,6 @@
 # AspectKit
 
-## How To Get Started
+## Installation
 
 ### Cocoapods
 
