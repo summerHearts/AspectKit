@@ -20,6 +20,9 @@ github "AspectKit/AspectKit"
 
 ## Requirements
 
+* iOS 8.0+ / Mac OS X 10.9+ / watchOS 2 / tvOS 9.0+
+* Xcode 7.0+
+
 ## Architecture
 
 ## Usage
