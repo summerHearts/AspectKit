@@ -1,4 +1,4 @@
-# AspectKit
+# ![AspectKit](logo.png)
 
 ## Installation
 
