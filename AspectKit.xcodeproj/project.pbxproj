@@ -119,10 +119,10 @@
 		FA769A321BB6AEDB009ABF4C /* Aspect */ = {
 			isa = PBXGroup;
 			children = (
-				FA769A331BB6AEDB009ABF4C /* Advice.swift */,
 				FA769A341BB6AEDB009ABF4C /* Aspect.swift */,
-				FA769A351BB6AEDB009ABF4C /* JoinPoint.swift */,
+				FA769A331BB6AEDB009ABF4C /* Advice.swift */,
 				FA769A361BB6AEDB009ABF4C /* Pointcut.swift */,
+				FA769A351BB6AEDB009ABF4C /* JoinPoint.swift */,
 			);
 			path = Aspect;
 			sourceTree = "<group>";
@@ -130,11 +130,11 @@
 		FA769A371BB6AEDB009ABF4C /* AspectCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				FA769A3C1BB6AEDB009ABF4C /* CocoaPointcut.swift */,
 				FA769A381BB6AEDB009ABF4C /* ASKCocoaInvocation.h */,
 				FA769A391BB6AEDB009ABF4C /* ASKCocoaInvocation.m */,
 				FA769A3A1BB6AEDB009ABF4C /* ASKCocoaRuntime.h */,
 				FA769A3B1BB6AEDB009ABF4C /* ASKCocoaRuntime.m */,
-				FA769A3C1BB6AEDB009ABF4C /* CocoaPointcut.swift */,
 			);
 			path = AspectCocoa;
 			sourceTree = "<group>";
