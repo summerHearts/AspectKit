@@ -8,6 +8,6 @@
 
 import Foundation
 
-class CocoaPointcut: Pointcut {
+public class CocoaPointcut: Pointcut {
     
 }
