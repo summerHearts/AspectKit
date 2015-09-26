@@ -338,10 +338,48 @@ class ASKCocoaRuntimeTests: XCTestCase {
     }
     
     func testObjcTypeEncodingWithClass() {
-        var encoding = ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "method", method: .Instance)
-        XCTAssert(encoding == "v16@0:8")
-        encoding = ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "method", method: .Class)
-        XCTAssert(encoding == "v16@0:8")
+        let voidToVoidMethodEncoding = "v16@0:8"
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "method", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "method", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "objcMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "objcMethod", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "dynamicMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestNSObject.self, selector: "dynamicMethod", method: .Class) == voidToVoidMethodEncoding)
+        
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicNSObject.self, selector: "method", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicNSObject.self, selector: "method", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicNSObject.self, selector: "objcMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicNSObject.self, selector: "objcMethod", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicNSObject.self, selector: "dynamicMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicNSObject.self, selector: "dynamicMethod", method: .Class) == voidToVoidMethodEncoding)
+        
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateNSObject.self, selector: "method", method: .Instance))
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateNSObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateNSObject.self, selector: "objcMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateNSObject.self, selector: "objcMethod", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateNSObject.self, selector: "dynamicMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateNSObject.self, selector: "dynamicMethod", method: .Class) == voidToVoidMethodEncoding)
+        
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestSwiftObject.self, selector: "method", method: .Instance))
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestSwiftObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestSwiftObject.self, selector: "objcMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestSwiftObject.self, selector: "objcMethod", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestSwiftObject.self, selector: "dynamicMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestSwiftObject.self, selector: "dynamicMethod", method: .Class) == voidToVoidMethodEncoding)
+        
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicSwiftObject.self, selector: "method", method: .Instance))
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicSwiftObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicSwiftObject.self, selector: "objcMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicSwiftObject.self, selector: "objcMethod", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicSwiftObject.self, selector: "dynamicMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPublicSwiftObject.self, selector: "dynamicMethod", method: .Class) == voidToVoidMethodEncoding)
+        
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateSwiftObject.self, selector: "method", method: .Instance))
+        XCTAssertNil(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateSwiftObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateSwiftObject.self, selector: "objcMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateSwiftObject.self, selector: "objcMethod", method: .Class) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateSwiftObject.self, selector: "dynamicMethod", method: .Instance) == voidToVoidMethodEncoding)
+        XCTAssert(ASKCocoaRuntime.objcTypeEncodingWithClass(TestPrivateSwiftObject.self, selector: "dynamicMethod", method: .Class) == voidToVoidMethodEncoding)
     }
     
     func testRootResponseClassWithClass() {
