@@ -89,8 +89,8 @@
 		FA0312551BAD3EE900101C42 /* AspectKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */,
 				FA0312561BAD3EE900101C42 /* AspectKitTests.swift */,
+				FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */,
 				FA0312581BAD3EE900101C42 /* Info.plist */,
 			);
 			path = AspectKitTests;
