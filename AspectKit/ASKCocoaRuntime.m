@@ -88,10 +88,10 @@ typedef struct _ASKBlock {
 {
     switch (method) {
         case ASKMethodClass:
-            return [clazz respondsToSelector:selector];
+            return class_getClassMethod(clazz, selector) != NULL;
             break;
         case ASKMethodInstance:
-            return [clazz instancesRespondToSelector:selector];
+            return class_getInstanceMethod(clazz, selector) != NULL;
             break;
     }
 }
@@ -157,7 +157,7 @@ typedef struct _ASKBlock {
     } else if ([ASKCocoaRuntime respondsClass:[ASKCocoaRuntime superClassWithClass:clazz]
                                    toSelector:selector
                                        method:method]) {
-        return [ASKCocoaRuntime rootResponseClassWithClass:clazz selector:selector method:method];
+        return [ASKCocoaRuntime rootResponseClassWithClass:[ASKCocoaRuntime superClassWithClass:clazz] selector:selector method:method];
     }
     
     return clazz;
