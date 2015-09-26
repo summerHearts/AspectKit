@@ -10,19 +10,23 @@
 		FA03124B1BAD3EE900101C42 /* AspectKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FA03124A1BAD3EE900101C42 /* AspectKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA0312521BAD3EE900101C42 /* AspectKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0312471BAD3EE900101C42 /* AspectKit.framework */; settings = {ASSET_TAGS = (); }; };
 		FA0312571BAD3EE900101C42 /* AspectKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312561BAD3EE900101C42 /* AspectKitTests.swift */; };
-		FA0312631BAD3EFF00101C42 /* ASKCocoaRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
-		FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
 		FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */; settings = {ASSET_TAGS = (); }; };
-		FA03126A1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
-		FA03126B1BAD418300101C42 /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0312691BAD418300101C42 /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7699EC1BB6AC20009ABF4C /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7699EB1BB6AC20009ABF4C /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7699ED1BB6AC20009ABF4C /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7699EB1BB6AC20009ABF4C /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7699EF1BB6AC35009ABF4C /* Pointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7699EE1BB6AC35009ABF4C /* Pointcut.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7699F01BB6AC35009ABF4C /* Pointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7699EE1BB6AC35009ABF4C /* Pointcut.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
-		FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7D3E8C1BB2851400E33392 /* Aspect.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A3D1BB6AEDB009ABF4C /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A331BB6AEDB009ABF4C /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A3E1BB6AEDB009ABF4C /* Advice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A331BB6AEDB009ABF4C /* Advice.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A3F1BB6AEDB009ABF4C /* Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A341BB6AEDB009ABF4C /* Aspect.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A401BB6AEDB009ABF4C /* Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A341BB6AEDB009ABF4C /* Aspect.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A411BB6AEDB009ABF4C /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A351BB6AEDB009ABF4C /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A421BB6AEDB009ABF4C /* JoinPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A351BB6AEDB009ABF4C /* JoinPoint.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A431BB6AEDB009ABF4C /* Pointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A361BB6AEDB009ABF4C /* Pointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A441BB6AEDB009ABF4C /* Pointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A361BB6AEDB009ABF4C /* Pointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A451BB6AEDB009ABF4C /* ASKCocoaInvocation.h in Headers */ = {isa = PBXBuildFile; fileRef = FA769A381BB6AEDB009ABF4C /* ASKCocoaInvocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA769A461BB6AEDB009ABF4C /* ASKCocoaInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA769A391BB6AEDB009ABF4C /* ASKCocoaInvocation.m */; settings = {ASSET_TAGS = (); }; };
+		FA769A471BB6AEDB009ABF4C /* ASKCocoaInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FA769A391BB6AEDB009ABF4C /* ASKCocoaInvocation.m */; settings = {ASSET_TAGS = (); }; };
+		FA769A481BB6AEDB009ABF4C /* ASKCocoaRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = FA769A3A1BB6AEDB009ABF4C /* ASKCocoaRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA769A491BB6AEDB009ABF4C /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA769A3B1BB6AEDB009ABF4C /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
+		FA769A4A1BB6AEDB009ABF4C /* ASKCocoaRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = FA769A3B1BB6AEDB009ABF4C /* ASKCocoaRuntime.m */; settings = {ASSET_TAGS = (); }; };
+		FA769A4B1BB6AEDB009ABF4C /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A3C1BB6AEDB009ABF4C /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
+		FA769A4C1BB6AEDB009ABF4C /* CocoaPointcut.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA769A3C1BB6AEDB009ABF4C /* CocoaPointcut.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +46,16 @@
 		FA0312511BAD3EE900101C42 /* AspectKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AspectKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0312561BAD3EE900101C42 /* AspectKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectKitTests.swift; sourceTree = "<group>"; };
 		FA0312581BAD3EE900101C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKCocoaRuntime.h; sourceTree = "<group>"; };
-		FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKCocoaRuntime.m; sourceTree = "<group>"; };
 		FA0312661BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASKCocoaRuntimeTests.swift; sourceTree = "<group>"; };
-		FA0312691BAD418300101C42 /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
-		FA7699EB1BB6AC20009ABF4C /* JoinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPoint.swift; sourceTree = "<group>"; };
-		FA7699EE1BB6AC35009ABF4C /* Pointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointcut.swift; sourceTree = "<group>"; };
-		FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPointcut.swift; sourceTree = "<group>"; };
-		FA7D3E8C1BB2851400E33392 /* Aspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aspect.swift; sourceTree = "<group>"; };
+		FA769A331BB6AEDB009ABF4C /* Advice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advice.swift; sourceTree = "<group>"; };
+		FA769A341BB6AEDB009ABF4C /* Aspect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aspect.swift; sourceTree = "<group>"; };
+		FA769A351BB6AEDB009ABF4C /* JoinPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinPoint.swift; sourceTree = "<group>"; };
+		FA769A361BB6AEDB009ABF4C /* Pointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pointcut.swift; sourceTree = "<group>"; };
+		FA769A381BB6AEDB009ABF4C /* ASKCocoaInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKCocoaInvocation.h; sourceTree = "<group>"; };
+		FA769A391BB6AEDB009ABF4C /* ASKCocoaInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKCocoaInvocation.m; sourceTree = "<group>"; };
+		FA769A3A1BB6AEDB009ABF4C /* ASKCocoaRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASKCocoaRuntime.h; sourceTree = "<group>"; };
+		FA769A3B1BB6AEDB009ABF4C /* ASKCocoaRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASKCocoaRuntime.m; sourceTree = "<group>"; };
+		FA769A3C1BB6AEDB009ABF4C /* CocoaPointcut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CocoaPointcut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +100,8 @@
 			children = (
 				FA03124A1BAD3EE900101C42 /* AspectKit.h */,
 				FA03124C1BAD3EE900101C42 /* Info.plist */,
-				FA0312611BAD3EFF00101C42 /* ASKCocoaRuntime.h */,
-				FA0312621BAD3EFF00101C42 /* ASKCocoaRuntime.m */,
-				FA0312691BAD418300101C42 /* Advice.swift */,
-				FA7699EE1BB6AC35009ABF4C /* Pointcut.swift */,
-				FA7699EB1BB6AC20009ABF4C /* JoinPoint.swift */,
-				FA7D3E891BB2551200E33392 /* CocoaPointcut.swift */,
-				FA7D3E8C1BB2851400E33392 /* Aspect.swift */,
+				FA769A321BB6AEDB009ABF4C /* Aspect */,
+				FA769A371BB6AEDB009ABF4C /* AspectCocoa */,
 			);
 			path = AspectKit;
 			sourceTree = "<group>";
@@ -115,6 +116,29 @@
 			path = AspectKitTests;
 			sourceTree = "<group>";
 		};
+		FA769A321BB6AEDB009ABF4C /* Aspect */ = {
+			isa = PBXGroup;
+			children = (
+				FA769A331BB6AEDB009ABF4C /* Advice.swift */,
+				FA769A341BB6AEDB009ABF4C /* Aspect.swift */,
+				FA769A351BB6AEDB009ABF4C /* JoinPoint.swift */,
+				FA769A361BB6AEDB009ABF4C /* Pointcut.swift */,
+			);
+			path = Aspect;
+			sourceTree = "<group>";
+		};
+		FA769A371BB6AEDB009ABF4C /* AspectCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				FA769A381BB6AEDB009ABF4C /* ASKCocoaInvocation.h */,
+				FA769A391BB6AEDB009ABF4C /* ASKCocoaInvocation.m */,
+				FA769A3A1BB6AEDB009ABF4C /* ASKCocoaRuntime.h */,
+				FA769A3B1BB6AEDB009ABF4C /* ASKCocoaRuntime.m */,
+				FA769A3C1BB6AEDB009ABF4C /* CocoaPointcut.swift */,
+			);
+			path = AspectCocoa;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -122,8 +146,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA769A481BB6AEDB009ABF4C /* ASKCocoaRuntime.h in Headers */,
+				FA769A451BB6AEDB009ABF4C /* ASKCocoaInvocation.h in Headers */,
 				FA03124B1BAD3EE900101C42 /* AspectKit.h in Headers */,
-				FA0312631BAD3EFF00101C42 /* ASKCocoaRuntime.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,12 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7699EC1BB6AC20009ABF4C /* JoinPoint.swift in Sources */,
-				FA7699EF1BB6AC35009ABF4C /* Pointcut.swift in Sources */,
-				FA7D3E8A1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
-				FA0312641BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
-				FA7D3E8D1BB2851400E33392 /* Aspect.swift in Sources */,
-				FA03126A1BAD418300101C42 /* Advice.swift in Sources */,
+				FA769A491BB6AEDB009ABF4C /* ASKCocoaRuntime.m in Sources */,
+				FA769A411BB6AEDB009ABF4C /* JoinPoint.swift in Sources */,
+				FA769A3D1BB6AEDB009ABF4C /* Advice.swift in Sources */,
+				FA769A3F1BB6AEDB009ABF4C /* Aspect.swift in Sources */,
+				FA769A4B1BB6AEDB009ABF4C /* CocoaPointcut.swift in Sources */,
+				FA769A461BB6AEDB009ABF4C /* ASKCocoaInvocation.m in Sources */,
+				FA769A431BB6AEDB009ABF4C /* Pointcut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,13 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7699ED1BB6AC20009ABF4C /* JoinPoint.swift in Sources */,
-				FA0312651BAD3EFF00101C42 /* ASKCocoaRuntime.m in Sources */,
-				FA7D3E8B1BB2551200E33392 /* CocoaPointcut.swift in Sources */,
 				FA0312681BAD3FEA00101C42 /* ASKCocoaRuntimeTests.swift in Sources */,
+				FA769A471BB6AEDB009ABF4C /* ASKCocoaInvocation.m in Sources */,
+				FA769A441BB6AEDB009ABF4C /* Pointcut.swift in Sources */,
 				FA0312571BAD3EE900101C42 /* AspectKitTests.swift in Sources */,
-				FA03126B1BAD418300101C42 /* Advice.swift in Sources */,
-				FA7699F01BB6AC35009ABF4C /* Pointcut.swift in Sources */,
+				FA769A4A1BB6AEDB009ABF4C /* ASKCocoaRuntime.m in Sources */,
+				FA769A3E1BB6AEDB009ABF4C /* Advice.swift in Sources */,
+				FA769A4C1BB6AEDB009ABF4C /* CocoaPointcut.swift in Sources */,
+				FA769A421BB6AEDB009ABF4C /* JoinPoint.swift in Sources */,
+				FA769A401BB6AEDB009ABF4C /* Aspect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
