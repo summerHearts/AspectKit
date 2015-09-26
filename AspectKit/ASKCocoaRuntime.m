@@ -157,7 +157,9 @@ typedef struct _ASKBlock {
     } else if ([ASKCocoaRuntime respondsClass:[ASKCocoaRuntime superClassWithClass:clazz]
                                    toSelector:selector
                                        method:method]) {
-        return [ASKCocoaRuntime rootResponseClassWithClass:[ASKCocoaRuntime superClassWithClass:clazz] selector:selector method:method];
+        return [ASKCocoaRuntime rootResponseClassWithClass:[ASKCocoaRuntime superClassWithClass:clazz]
+                                                  selector:selector
+                                                    method:method];
     }
     
     return clazz;

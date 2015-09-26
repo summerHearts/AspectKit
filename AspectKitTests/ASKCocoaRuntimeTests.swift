@@ -383,7 +383,16 @@ class ASKCocoaRuntimeTests: XCTestCase {
     }
     
     func testRootResponseClassWithClass() {
-        XCTFail()
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(NSObject.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
+        
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(NSString.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
+        
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "method", method: .Instance))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "objcMethod", method: .Instance) == TestSwiftObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "dynamicMethod", method: .Instance) == TestSwiftObject.self)
     }
     
     func testMethodSignatureWithClass() {
