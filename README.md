@@ -1,5 +1,8 @@
 # ![AspectKit](logo.png)
 
+AspectKit is aspect oriented programming support framework that runs directly inside phones, tablets or wearables.
+
+
 ## Installation
 
 ### Cocoapods
