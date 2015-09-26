@@ -37,9 +37,9 @@ typedef NS_ENUM(NSInteger, ASKMethod) {
 
 + (BOOL)selector:(nonnull SEL)leftSelector isEqualToSelector:(nonnull SEL)rightSelector;
 
-+ (nonnull NSString *)objcTypeEncodingWithClass:(nonnull Class)clazz
-                                       selector:(nonnull SEL)selector
-                                         method:(ASKMethod)method;
++ (nullable NSString *)objcTypeEncodingWithClass:(nonnull Class)clazz
+                                        selector:(nonnull SEL)selector
+                                          method:(ASKMethod)method;
 
 + (nullable Class)rootResponseClassWithClass:(nonnull Class)clazz
                                     selector:(nonnull SEL)selector

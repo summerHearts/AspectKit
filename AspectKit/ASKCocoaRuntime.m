@@ -132,16 +132,22 @@ typedef struct _ASKBlock {
 
 + (NSString *)objcTypeEncodingWithClass:(Class)clazz selector:(SEL)selector method:(ASKMethod)method
 {
+    Method targetMethod;
     switch (method) {
         case ASKMethodClass:
-            return [NSString stringWithCString:method_getTypeEncoding(class_getClassMethod(clazz, selector))
-                                      encoding:NSUTF8StringEncoding];
+            targetMethod = class_getClassMethod(clazz, selector);
             break;
         case ASKMethodInstance:
-            return [NSString stringWithCString:method_getTypeEncoding(class_getInstanceMethod(clazz, selector))
-                                      encoding:NSUTF8StringEncoding];
+            targetMethod = class_getInstanceMethod(clazz, selector);
             break;
     }
+    
+    if (!targetMethod){
+        return nil;
+    }
+    
+    return [NSString stringWithCString:method_getTypeEncoding(targetMethod)
+                              encoding:NSUTF8StringEncoding];
 }
 
 + (Class)rootResponseClassWithClass:(Class)clazz selector:(SEL)selector method:(ASKMethod)method
