@@ -387,12 +387,52 @@ class ASKCocoaRuntimeTests: XCTestCase {
         XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
         XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
         XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(NSObject.self, selector: "instancesRespondToSelector:", method: .Class) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "instancesRespondToSelector:", method: .Class) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "instancesRespondToSelector:", method: .Class) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "instancesRespondToSelector:", method: .Class) == NSObject.self)
         
-        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(NSString.self, selector: "methodForSelector:", method: .Instance) == NSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "method", method: .Instance) == TestNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "objcMethod", method: .Instance) == TestNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "dynamicMethod", method: .Instance) == TestNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "method", method: .Class) == TestNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "objcMethod", method: .Class) == TestNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestNSObject.self, selector: "dynamicMethod", method: .Class) == TestNSObject.self)
+        
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "method", method: .Instance) == TestPublicNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "objcMethod", method: .Instance) == TestPublicNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "dynamicMethod", method: .Instance) == TestPublicNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "method", method: .Class) == TestPublicNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "objcMethod", method: .Class) == TestPublicNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicNSObject.self, selector: "dynamicMethod", method: .Class) == TestPublicNSObject.self)
+        
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "method", method: .Instance))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "objcMethod", method: .Instance) == TestPrivateNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "dynamicMethod", method: .Instance) == TestPrivateNSObject.self)
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "objcMethod", method: .Class) == TestPrivateNSObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateNSObject.self, selector: "dynamicMethod", method: .Class) == TestPrivateNSObject.self)
         
         XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "method", method: .Instance))
         XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "objcMethod", method: .Instance) == TestSwiftObject.self)
         XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "dynamicMethod", method: .Instance) == TestSwiftObject.self)
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "objcMethod", method: .Class) == TestSwiftObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestSwiftObject.self, selector: "dynamicMethod", method: .Class) == TestSwiftObject.self)
+        
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicSwiftObject.self, selector: "method", method: .Instance))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicSwiftObject.self, selector: "objcMethod", method: .Instance) == TestPublicSwiftObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicSwiftObject.self, selector: "dynamicMethod", method: .Instance) == TestPublicSwiftObject.self)
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicSwiftObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicSwiftObject.self, selector: "objcMethod", method: .Class) == TestPublicSwiftObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPublicSwiftObject.self, selector: "dynamicMethod", method: .Class) == TestPublicSwiftObject.self)
+        
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateSwiftObject.self, selector: "method", method: .Instance))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateSwiftObject.self, selector: "objcMethod", method: .Instance) == TestPrivateSwiftObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateSwiftObject.self, selector: "dynamicMethod", method: .Instance) == TestPrivateSwiftObject.self)
+        XCTAssertNil(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateSwiftObject.self, selector: "method", method: .Class))
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateSwiftObject.self, selector: "objcMethod", method: .Class) == TestPrivateSwiftObject.self)
+        XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateSwiftObject.self, selector: "dynamicMethod", method: .Class) == TestPrivateSwiftObject.self)
     }
     
     func testMethodSignatureWithClass() {
