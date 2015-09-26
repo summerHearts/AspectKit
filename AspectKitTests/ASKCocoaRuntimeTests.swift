@@ -435,10 +435,6 @@ class ASKCocoaRuntimeTests: XCTestCase {
         XCTAssert(ASKCocoaRuntime.rootResponseClassWithClass(TestPrivateSwiftObject.self, selector: "dynamicMethod", method: .Class) == TestPrivateSwiftObject.self)
     }
     
-    func testMethodSignatureWithClass() {
-        XCTFail()
-    }
-    
     func testOverwriteForClass() {
         XCTFail()
     }
